@@ -1,0 +1,33 @@
+To use, open iso639-5.numbers, iso-639-3.numbers, and etymology.numbers in Numbers. 
+
+Open a new document in OmniGraffle, with a Pro license. Only have one document open, because the code is sloppy about choosing which document to use.
+
+Open Etymology tree.scpt in Script Editor
+
+Change searchText to a word (including the language abbreviation) found in etymology.numbers
+
+Run the script. It will make a diagram of words related to the given word. You might want to set the diagram layout to hierarchical and tell it to lay itself out. The result value of the script can be used as alt text for the diagram. Words which are in the same language as the one you searched for will have a different colour and shape so they'll stand out more.
+
+If the tree is too big and you want to consolidate the derived words of each word which don't have any words deriving from them into a single node, run Group sibling leaf nodes.scpt
+
+Sources:
+
+iso639-5.numbers comes from https://id.loc.gov/vocabulary/iso639-5.html (http://id.loc.gov/vocabulary/iso639-5.tsv converted to a numbers file)
+
+iso-639-3.numbers comes from https://iso639-3.sil.org/code_tables/download_tables (iso-639-3.tab from https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3_Code_Tables_20210218.zip renamed to .txt and converted to a numbers file)
+
+etymology.numbers is the result of filtering Etymological Wordnet 2013-02-08 (from http://icsi.berkeley.edu/~demelo/etymwn/) by "rel:etymology" and saving it as a numbers file.
+
+== CREDITS AND LICENSE for Etymological Wordnet ==
+
+Gerard de Melo
+http://icsi.berkeley.edy/~demelo/
+Based on the contributions of the English Wiktionary community
+http://en.wiktionary.org/
+
+License: CC-BY-SA 3.0
+
+In scientific works, please cite:
+  Gerard de Melo, Gerhard Weikum. "Towards Universal Multilingual Knowledge Bases".
+  In: Principles, Construction, and Applications of Multilingual Wordnets. Proceedings
+  of the 5th Global Wordnet Conference (GWC 2010). Narosa Publishing 2010, New Delhi India.
