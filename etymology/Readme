@@ -6,7 +6,7 @@ Open Etymology tree.scpt in Script Editor
 
 Change searchText to a word (including the language abbreviation) found in etymology.numbers
 
-Run the script. It will make a diagram of words related to the given word. You might want to set the diagram layout to hierarchical and tell it to lay itself out. The result value of the script can be used as alt text for the diagram. Words which are in the same language as the one you searched for will have a different colour and shape so they'll stand out more.
+Run the script. It will ask which word you want to make a diagram of. Enter a word, with the language abbreviation before it like in etymology.numbers (if you want an English word, just type it after the 'eng: ' that's already filled in.) The script will make a diagram of words related to the given word. You might want to set the diagram layout to hierarchical and tell it to lay itself out. The result value of the script can be used as alt text for the diagram. Words which are in the same language as the one you searched for will have a different colour and shape so they'll stand out more.
 
 If the tree is too big and you want to consolidate the derived words of each word which don't have any words deriving from them into a single node, run Group sibling leaf nodes.scpt
 
